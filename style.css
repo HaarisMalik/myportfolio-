@@ -508,6 +508,7 @@ Projects
 /* .project__list {
      margin-top: 60px;
  } */
+ 
 
  .section__title {
      text-align: center;
@@ -519,6 +520,8 @@ Projects
      width: 100%;
      transition: all 600ms ease;
  } 
+
+
 
  .project:hover .project__img {
      transform: scale(1.07);
@@ -707,7 +710,7 @@ Projects
 
 /* SMALL PHONES */
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
  .title {
     font-size: 52px;
  }
