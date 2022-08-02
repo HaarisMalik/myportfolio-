@@ -509,6 +509,9 @@ Projects
      margin-top: 60px;
  } */
  
+ #projects {
+    padding-bottom: 200px;
+ }
 
  .section__title {
      text-align: center;
