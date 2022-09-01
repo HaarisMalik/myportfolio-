@@ -691,7 +691,21 @@ Projects
     left: 80vw;
 }
 
+/* Laptops */
+
+@media (max-height: 750px) {
+
+    .title {
+        font-size: 80px ;
+    }
+
+    .header__para {
+        font-size: 20px;
+    }
+}
+
 /* Small phones , tablets , large smart phones */
+
 
 @media (max-width: 768px) {
     .title {
