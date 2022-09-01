@@ -267,16 +267,16 @@ Landing Page
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: scroll 1000ms infinite alternate-reverse;
+    animation: scroll 900ms infinite alternate-reverse;
 }
 
 @keyframes scroll {
     0% {
-        transform: translateY(3px)
+        transform: translateY(4px)
     }
 
     100% {
-        transform: translateY(-3px);
+        transform: translateY(-4px);
     }
 }
 
@@ -691,6 +691,20 @@ Projects
     left: 80vw;
 }
 
+
+
+/* PRE LOADER */
+ 
+#preloader {
+    background: white url(assets/preloader2.gif) no-repeat center;
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 101;
+}
+
+
 /* Laptops */
 
 
@@ -707,9 +721,17 @@ Projects
     
     .modal {
         height: 600px;
+        margin: 0 auto;
     }
 
+}
 
+@media (max-height: 650px){
+    .header {
+        position: absolute;
+        top: 52%;
+        left: 50%;
+    }
 }
 
 /* Small phones , tablets , large smart phones */
@@ -760,6 +782,14 @@ Projects
      display: none;
  }
 
+ .section__title {
+     font-size: 28px;
+ }
+
+ .project__description--title {
+    font-size: 30px;
+ }
+
  .project__description--para {
      display: none;
  }
@@ -777,5 +807,15 @@ Projects
 
  .modal__half {
      padding: 40px;
+ }
+
+ #personal-logo {
+    width: 60px;
+    height: 60px;
+}
+
+ #personl-logo-footer {
+    width: 70px;
+    height: 70px;
  }
 }

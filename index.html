@@ -19,6 +19,9 @@
 </script>
 </head>
 <body>
+    <div id="preloader">
+
+    </div>
     <section id="landing-page" onmousemove="moveBackground(event)">
         <nav>
             <figure>
@@ -370,4 +373,12 @@
         </div> 
     </footer>
 </body>
+
+  <script>
+     var loader = document.getElementById("preloader");
+
+     window.addEventListener("load", function() {
+        loader.style.display = "none"
+     })
+  </script>
 </html>
