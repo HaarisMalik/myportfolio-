@@ -693,28 +693,28 @@ Projects
 
 /* Laptops */
 
+
 @media (max-height: 750px) {
 
     .title {
         font-size: 80px ;
+        
     }
 
     .header__para {
         font-size: 20px;
     }
+    
+    .modal {
+        height: 600px;
+    }
+
+
 }
 
 /* Small phones , tablets , large smart phones */
 
-
-@media (max-width: 768px) {
-    .title {
-        font-size: 80px;
-    }
-
-    .header__para {
-        font-size: 20px;
-    }
+@media (max-width: 882px) {
     .modal {
         top: 0;
         left: 0;
@@ -727,6 +727,22 @@ Projects
 
     .modal__half {
         width: 100%;
+    }
+
+    .modal__language--img {
+        width: 70%;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 80px;
+    }
+
+    .header__para {
+        font-size: 20px;
     }
 
 }
