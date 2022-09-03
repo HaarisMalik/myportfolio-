@@ -9,7 +9,7 @@
 }
 
 .browser-icon {
-    color: #f06449;
+    color: #499cf0;
 }
 
 html {
@@ -75,7 +75,7 @@ input:hover, textarea:hover {
 }
 
 input:focus, textarea:focus {
-    border-color: #f06449;
+    border-color: #499cf0;
 }
 
 .row {
@@ -106,7 +106,7 @@ input:focus, textarea:focus {
 }
 
  .orange {
-    color: #f06449 !important;
+    color: #499cf0 !important;
 }
 .link__hover-effect {
     position: relative;
@@ -124,11 +124,11 @@ input:focus, textarea:focus {
     transition: all 300ms ease;
 }
 .link__hover-effect--white:after {
-    background-color: #fff;
+    background-color: #499cf0;
 }
 
 .link__hover-effect--black:after {
-    background-color: #242424;
+    background-color: #499cf0;
 }
 
 .link__hover-effect:hover:after {
@@ -175,7 +175,7 @@ input:focus, textarea:focus {
 
 .dark-theme .scroll__icon:after,
 .dark-theme .link__hover-effect--black:after{
-    background-color: white;
+    background-color: #499cf0;
 }
 
 .dark-theme .mail__btn {
@@ -211,11 +211,12 @@ Landing Page
 .social__list {
     margin-top: 16px;
     display: flex;
+    
 
 }
 
 .social__link {
-    background-color: #f06449;
+    background-color: #499cf0;
     color: white;
     padding: 6px;
     width: 32px;
@@ -226,7 +227,10 @@ Landing Page
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    
 }
+
+
 
 .mail__btn {
     width: 70px;
@@ -431,8 +435,8 @@ MODAL
  }
 
  .form__submit {
-     background-color: #f06449;
-     border: 2px solid #f06449;
+     background-color: #499cf0;
+     border: 2px solid #499cf0;
      color: white;
      font-weight: bold;
      width: 100%;
@@ -448,8 +452,8 @@ MODAL
  }
 
  .form__submit:active {
-     border-color: #f06449;
-     color: #f06449;
+     border-color: #499cf0;
+     color: #499cf0;
  }
 
  .modal__overlay {
@@ -695,14 +699,7 @@ Projects
 
 /* PRE LOADER */
  
-#preloader {
-    background: white url(assets/preloader2.gif) no-repeat center;
-    background-size: 20%;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 101;
-}
+
 
 
 /* Laptops */
@@ -818,4 +815,9 @@ Projects
     width: 70px;
     height: 70px;
  }
+
+ .shape {
+    display: none;
+ }
+
 }
