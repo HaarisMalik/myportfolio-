@@ -8,6 +8,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.resume {
+    cursor: not-allowed;
+    
+}
 
 
 .browser-icon {
@@ -159,8 +163,20 @@ input:focus, textarea:focus {
 .dark-theme .section__sub-title,
 .dark-theme .nav__link--anchor,
 .dark-theme .fa-adjust,
-.dark-theme .header__para {
+.dark-theme .header__para,
+.dark-theme .skill-head,
+.dark-theme .language__name,
+.dark-theme .scroll__title {
   color: #fff;
+}
+
+.dark-theme .about__para {
+    background-color: #242424;
+    color: #fff;
+}
+
+.dark-theme .scroll__icon2 {
+    filter: invert(1);
 }
 
 .dark-theme section {
@@ -183,6 +199,10 @@ input:focus, textarea:focus {
 .dark-theme .mail__btn {
     background-color: white;
     color: #242424;
+}
+
+ .figma, .js, .github {
+    border-radius: 8px;
 }
 /* 
 
@@ -207,7 +227,7 @@ Landing Page
 .header__para {
     font-size: 24px;
     line-height: 2;
-    max-width: 480px;
+    max-width: 500px;
 }
 
 .social__list {
@@ -249,6 +269,23 @@ Landing Page
     box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.28);
 }
 
+.scroll__title {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 60px;    
+    text-align: center;
+    z-index: 1;
+}
+
+.scroll__begin {
+    font-weight: 600;
+}
+
+
+
 .scroll {
     position: absolute;
     bottom: 20px;
@@ -273,6 +310,13 @@ Landing Page
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: scroll 900ms infinite alternate-reverse;
+}
+
+.scroll__icon2 {
+    width: 30px;
+    height: 30px;
+    transform: translateX(-50%);
     animation: scroll 900ms infinite alternate-reverse;
 }
 
@@ -404,12 +448,13 @@ MODAL
  .language__name {
      position: absolute;
      bottom: -10px;
+     font-weight: bold;
      transform: scale(0);
      transition: all 300ms ease;
  }
 
  .modal__language--img {
-     width: 100%;
+     width: 70%;
  }
 
  .modal__contact {
@@ -429,7 +474,15 @@ MODAL
 
  .modal__para {
      margin-bottom: 12px;
-     line-height: 1.75;
+     line-height: 2.50;
+ }
+
+ .modal__intro {
+   color: #499cf0;
+ }
+
+ .modal__signoff {
+    color: #499cf0;
  }
 
  .form__item {
@@ -511,6 +564,62 @@ MODAL
      font-size: 36px;
      z-index: 100;
  }
+ /*
+
+ ABOUT ME
+
+ */
+
+ .about__para {
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: rgb(245, 245, 245);
+    transition: 0.3s;
+    border-radius: 8px;
+    padding: 24px;
+    position: relative;
+ }
+
+ #aboutme {
+    padding-top: 180px;
+    padding-bottom: 200px;
+ }
+
+ .skill-head{
+    text-align: center;
+    padding-bottom: 40px;
+ }
+
+ .skill-section {
+    padding-top: 100px;
+ }
+ 
+ .blob1 img {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 55%;
+    bottom: -63%;
+    
+ }
+
+ .blob2 img {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+    right: 0;
+    bottom: -63%;
+    
+ }
+
+
 /* 
 
 Projects
@@ -697,15 +806,18 @@ Projects
     left: 80vw;
 }
 
-
-
-/* PRE LOADER */
  
 
 
 
 /* Laptops */
 
+@media (max-height: 1000px) {
+    
+    .scroll__icon2{
+        display: none;
+    }
+}
 
 @media (max-height: 750px) {
 
@@ -722,6 +834,7 @@ Projects
         height: 600px;
         margin: 0 auto;
     }
+
 
 }
 
@@ -766,9 +879,44 @@ Projects
         font-size: 20px;
     }
 
+    .scroll__icon {
+        display: none;
+    }
+
+    .scroll__icon2 {
+        display: block;
+    }
+
 }
 
 /* SMALL PHONES */
+
+@media (max-width: 700px) {
+    .project__description--title {
+        font-size: 30px;
+        
+     }
+    
+     .project__description--para {
+         display: none;
+     }
+    
+     .project__description {
+         left: 0;
+         padding: 0;
+         width: 100%;
+         text-align: center;
+     }
+    
+     .project__description--sub-title {
+         margin-bottom: 8px;
+     }
+     
+     .project__wrapper {
+        cursor: pointer;
+     }
+    
+}
 
 @media (max-width: 500px) {
  .title {
@@ -791,6 +939,10 @@ Projects
 
  .project__description--para {
      display: none;
+ }
+ 
+ .project__wrapper{
+    cursor: pointer;
  }
 
  .project__description {
