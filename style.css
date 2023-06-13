@@ -818,6 +818,13 @@ Projects
     }
 }
 
+@media (min-width: 1000px) {
+
+    .scroll__icon2 {
+        display: none;
+    }
+}
+
 @media (max-height: 750px) {
 
     .title {
@@ -890,6 +897,7 @@ Projects
 
 /* SMALL PHONES */
 
+
 @media (max-width: 700px) {
     .project__description--title {
         font-size: 30px;
@@ -913,6 +921,10 @@ Projects
      
      .project__wrapper {
         cursor: pointer;
+     }
+
+     .blob2 {
+        display: none;
      }
     
 }
