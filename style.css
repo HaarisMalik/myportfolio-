@@ -454,7 +454,7 @@ MODAL
  }
 
  .modal__language--img {
-     width: 70%;
+     width: 80%;
  }
 
  .modal__contact {
@@ -649,7 +649,6 @@ Projects
  .project:hover .project__img {
      transform: scale(1.07);
      filter: blur(5px);
-     cursor: pointer;
  }
 
  .project__wrapper {
@@ -667,7 +666,7 @@ Projects
  .project__wrapper:hover .project__description {
     opacity: 1;
     transform: translateY(-50%);
-    cursor: pointer;
+    
 }
 
  .project__description {
@@ -684,7 +683,7 @@ Projects
 
  .project__wrapper:hover .project__wrapper--bg {
      opacity: 0.7;
-     cursor: pointer;
+     
  }
 
  .project__wrapper--bg {
@@ -924,6 +923,10 @@ Projects
      
      .project__wrapper {
         cursor: pointer;
+     }
+     
+     .project__wrapper:hover, .project__wrapper:active {
+        height: 250px;
      }
 
      .blob2 {
