@@ -49,6 +49,11 @@
 #corpus {
     padding-top: 50px;
 }
+
+.mockups {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
 .prototype {
     width: 80%;
     display: block;

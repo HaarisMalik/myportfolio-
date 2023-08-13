@@ -722,6 +722,7 @@ Projects
 
  .btn-wrapper a {
     color: white;
+    text-align: center;
     border: 2px solid var(--secondary-color);
     background-color: var(--secondary-color);
     padding: 12px;
