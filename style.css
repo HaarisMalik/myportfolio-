@@ -269,10 +269,7 @@ input:focus, textarea:focus {
     background-color: #499cf0;
 }
 
-.dark-theme .mail__btn {
-    background-color: #499cf0;
-    color: #fff;
-}
+
 
 .dark-theme .social__link {
     background-color: var(--blue-color);
@@ -361,7 +358,7 @@ Landing Page
     font-size: 32px;
     border-radius: 50%;
     border: none;
-    background-color: #171717;
+    background-color: #242424;
     color: white;
     position: fixed;
     bottom: 32px;
@@ -417,6 +414,7 @@ Landing Page
 }
 
 .scroll__icon2 {
+    filter: invert(1);
     width: 20px;
     height: 30px;
     transform: translateX(-50%);
